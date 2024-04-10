@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #212529;
+    color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #adb5bd;
+}
+
+#operations{
+    text-align: right;
+}
+
+#previous-operations{
+  color: #adb5bd;
+  padding: .2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+}
+
+#current-operations{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4rem;
+    font-size: 1.2em;
+    background-color: #787b7e;
+    color: rgba(255, 255, 255, 0.774);
+    cursor: pointer;
+}
+
+
+#buttons-container .number{
+    background-color:#494d5086;
+ 
+}
+#buttons-container .number:hover{
+    background-color: #7f828594;
+}
+
+#buttons-container button:hover{
+    background-color: #aeb3b4d0;
+}
+
+ #buttons-container .operatio{
+    background-color: #9ef78d;
+    color: #212529;
+}
+#buttons-container .operatio:hover{
+    background-color:  #b7f5aa;
+}
+
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: #9ef78d;
+    color: #212529;
+}
+#buttons-container #equal-btn:hover{
+    background-color: #b7f5aa;
+}
